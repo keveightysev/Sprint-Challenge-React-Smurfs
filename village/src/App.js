@@ -36,7 +36,7 @@ class App extends Component {
         <Link to="/add-smurf">Add Smurf</Link>
         <Route path="/add-smurf" render={props => (<SmurfForm {...props} updateParent={this.updateParent} />)} />
         <Route path="/" render={props => (<Smurfs {...props} smurfs={this.state.smurfs} />)} />
-        <Route path="/smurf/:id" render={props => (<Smurf {...props} smurfs={this.state.smurfs} />)} />
+        <Route path="/smurf/:id" render={props => (<Smurf {...props} smurfs={this.state.smurfs} updateParent={this.updateParent} />)} />
       </div>
     );
   }
