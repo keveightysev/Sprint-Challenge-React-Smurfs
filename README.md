@@ -53,9 +53,9 @@ Follow these steps to set up and work on your project:
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your Project Manager as a Reviewer on the Pull-request
-- [ ] PM then will count the HW as done by  merging the branch back into master.
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [x] Add your Project Manager as a Reviewer on the Pull-request
+- [x] PM then will count the HW as done by  merging the branch back into master.
 ## Minimum Viable Product
 
 The MVP of this project will be broken up between 2 stages. Follow each step and be sure to use your design/style skills to make this application look professional.
@@ -94,16 +94,16 @@ Add a Router to this application by using React Router.
 
 **HTTP/Axios Stretch Problems**
 
-- [ ] The following two endpoints are here for you if you'd like to push yourselves a little further.
+- [x] The following two endpoints are here for you if you'd like to push yourselves a little further.
 
-- [ ] **HINT** if you are going to be working on Stretch Problem, you'll need to use that unique `id`.
+- [x] **HINT** if you are going to be working on Stretch Problem, you'll need to use that unique `id`.
 
 **DELETE '/smurfs/123', where 123 is the Id of the smurf you want to remove**
 
-- [ ] For this endpoint to work, all you need is an id sent up as part of the request url.
+- [x] For this endpoint to work, all you need is an id sent up as part of the request url.
 
-- [ ] If your delete worked, you'll get a list of the smurfs back.
-- [ ] Example:
+- [x] If your delete worked, you'll get a list of the smurfs back.
+- [x] Example:
 
 ```js
 // output: `A list of all the smurfs in the Smurf DB will be returned`
@@ -125,8 +125,8 @@ Add a Router to this application by using React Router.
 
 **PUT '/smurfs/123', where 123 is the Id of the smurf you want to modify**
 
-- [ ] For this endpoint to work, you'll need an `id` added to the URL, and at least one field to update on the Smurf object. `name` `age` `height`.
-- [ ] Example:
+- [x] For this endpoint to work, you'll need an `id` added to the URL, and at least one field to update on the Smurf object. `name` `age` `height`.
+- [x] Example:
 
 ```js
 // input:
@@ -145,5 +145,5 @@ Add a Router to this application by using React Router.
 
 **Router Stretch Problem**
 
-- [ ] If a user clicks on a smurf, they should be routed to `/smurf/:id` and a single smurf should be displayed on the page.
-- [ ] I know this seems like a small task, but you'll have to get crafty with your data and your logic here.
+- [x] If a user clicks on a smurf, they should be routed to `/smurf/:id` and a single smurf should be displayed on the page.
+- [x] I know this seems like a small task, but you'll have to get crafty with your data and your logic here.
