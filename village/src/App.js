@@ -5,6 +5,7 @@ import { Route, Link } from 'react-router-dom';
 import './App.css';
 import SmurfForm from './components/SmurfForm';
 import Smurfs from './components/Smurfs';
+import Smurf from './components/Smurf';
 
 class App extends Component {
   constructor(props) {
@@ -34,7 +35,8 @@ class App extends Component {
       <div className="App">
         <Link to="/add-smurf">Add Smurf</Link>
         <Route path="/add-smurf" render={props => (<SmurfForm {...props} updateParent={this.updateParent} />)} />
-        <Route exact path="/" render={props => (<Smurfs {...props} smurfs={this.state.smurfs} />)} />
+        <Route path="/" render={props => (<Smurfs {...props} smurfs={this.state.smurfs} />)} />
+        <Route path="/smurf/:id" render={props => (<Smurf {...props} smurfs={this.state.smurfs} />)} />
       </div>
     );
   }
