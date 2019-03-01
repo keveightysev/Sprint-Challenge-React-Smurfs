@@ -16,10 +16,14 @@ class App extends Component {
   async componentDidMount() {
     try {
       const res = await axios.get('http://localhost:3333/smurfs');
-      this.setState(res.data);
+      this.setState({ smurfs: res.data });
     } catch (err) {
       console.log(err.message);
     }
+  }
+
+  updateParent = res => {
+    this.setState({ smurfs: res });
   }
   // add any needed code to ensure that the smurfs collection exists on state and it has data coming from the server
   // Notice what your map function is looping over and returning inside of Smurfs.
@@ -27,7 +31,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <SmurfForm />
+        <SmurfForm updateParent={this.updateParent} />
         <Smurfs smurfs={this.state.smurfs} />
       </div>
     );
